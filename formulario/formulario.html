@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<!-- Metadatos -->
+		<meta charset="UTF-8">
+		<meta name="description" content="Primer formulario de la asignatura de Diseño de Interfaces">
+		<meta name="author" content="Eduardo Jiménez">
+		<meta name="keywords" content="internet,interfaces,html,html5,páginas web">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+		<!-- <base href="http://www.midominio.com"> -->
+
+		<link rel="icon" href="icono.png" type="image/png">
+		<!-- type="image/x-icon" para imágenes .ico -->
+
+		<!-- Título de la web -->
+		<title>Formulario de la página web</title>
+	</head>
+	
+	<body>
+		
+		<main id="principal">
+			<form name="formulario" method="get" action="procesar.php">
+				<fieldset>
+					<legend>Datos personales</legend>
+					<p>
+						<label>Nombre: <input type="text" name="nombre" maxlength="20" required></label>
+					</p>
+					<fieldset>
+						<legend>Género</legend>
+						<input type="radio" name="genero" value="H" id="hombre">
+						<label for="hombre">Hombre</label><br>
+						<input type="radio" name="genero" value="M" id="mujer">
+						<label for="mujer">Mujer</label><br>
+						<input type="radio" name="genero" value="O" id="otros" checked>
+						<label for="otros">Otros</label>
+					</fieldset>
+					<p>
+						<label for="fecnac">Fecha de nacimiento: </label>
+						<input type="date" name="fecnac" id="fecnac" value="2000-12-15">
+					</p>
+					<p>
+						<label for="expe">Años trabajados: </label>
+						<input type="number" name="expe" id="expe" min="0" max="65">
+					</p>
+					<p>
+						<label for="correo">Correo electrónico: </label>
+						<input type="email" name="correo" id="correo">
+					</p>
+					<p>
+						<label for="telefono">Teléfono: </label>
+						<input type="tel" pattern="[0-9]{9}" name="telefono" id="telefono">
+					</p>
+					<p>
+						<label for="pagina">Página web personal: </label>
+						<input type="url" name="pagina" id="pagina">
+					</p>
+					<fieldset>
+						<legend>Intereses:</legend>
+						<input type="checkbox" name="intereses" id="cine" value="1">
+						<label for="cine">Cine y TV</label><br>
+						<input type="checkbox" name="intereses" id="lectura" value="2">
+						<label for="lectura">Lectura</label><br>
+						<input type="checkbox" name="intereses" id="tecnologia" value="3">
+						<label for="tecnologia">Tecnología</label><br>
+						<input type="checkbox" name="intereses" id="deportes" value="4">
+						<label for="deportes">Deportes</label><br>
+					</fieldset>
+					<p>
+						<label for="color">Mi color favorito es:</label>
+						<input type="color" name="color" id="color" value="#3BEABA">
+					</p>
+					<p>
+						<label for="satisfaccion">Grado de satisfacción con el formulario (1 a 100):</label>
+						<input type="range" name="satisfaccion" id="satisfaccion" min="1" max="100" value="75">
+					</p>
+					<p>
+						<input type="submit" value="Enviar">
+					</p>
+				</fieldset>
+			</form>
+		</main>
+		
+	</body>
+</html>

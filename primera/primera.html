@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Metadatos -->
+		<meta charset="UTF-8">
+		<meta name="description" content="Mi primera página web de la asignatura de Diseño de Interfaces">
+		<meta name="author" content="Eduardo Jiménez">
+		<meta name="keywords" content="internet,interfaces,html,html5,páginas web">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+		<!-- <base href="http://www.midominio.com"> -->
+
+		<link rel="icon" href="icono.png" type="image/png">
+		<!-- type="image/x-icon" para imágenes .ico -->
+
+		<!-- Título de la web -->
+		<title>Mi primera página Web</title>
+	</head>
+	
+	<body>
+		<header id="encabezado">
+			<picture>
+				<source media="(min-width:800px)" srcset="icono.svg">
+				<source media="(min-width:600px)" srcset="icono.png">
+				<img src="imagen.jpg">
+			</picture>
+			<h1>Te damos la bienvenida</h1>
+			<!-- <h1><h2>...<h6> -->
+		
+		</header>
+
+		<nav>
+			<p> <a href="http://www.google.es" target="_blank">Apartado 1</a> - <a href="#piedepag">Apartado 2</a> - <a href="icono2.jpg" download>Apartado 3</a></p>
+		</nav>
+
+		<main>
+			<div>
+				<section>
+					<article>
+						<h2>Título del artículo</h2>
+						<p><span translate="no">Lorem</span> ipsum dolor sit amet consectetur adipiscing elit torquent maecenas orci, nostra cursus curae ornare egestas <strong>praesent parturient eros vitae</strong>, proin conubia at litora iaculis <em>pharetra inceptos arcu</em> magna. Montes leo ac euismod porttitor volutpat penatibus dis odio vivamus vulputate rutrum, lobortis vel pretium facilisis congue aliquam lacinia vestibulum cubilia est purus donec, <strong>interdum <em>pharetra et quis</em></strong> ultrices himenaeos viverra mus quisque aptent. Posuere nulla curae nam mauris rutrum vivamus, nisl purus ultrices velit elementum ligula, interdum convallis praesent nunc aptent.</p>
+						
+						<h3>Haz clic en los muebles</h3>
+						<map name="mimapa">
+							<area shape="rect" coords="618,507,951,690" alt="Rectángulo" href="https://es.wikipedia.org/wiki/Television">
+							<area shape="circle" coords="271,673,40" alt="Círculo" href="https://es.wikipedia.org/wiki/Jarr%C3%B3n">
+							<area shape="poly" coords="492,409,174,417,174,319,271,315,270,249,366,250,370,178,495,187" alt="Polígono" href="https://es.wikipedia.org/wiki/Estanter%C3%ADa">
+						</map>
+						<img src="salon.jpg" alt="Salón" usemap="#mimapa">
+						
+					</article>
+					
+					<article>
+						<h2>Segundo artículo</h2>
+						<p>Magna blandit mattis malesuada montes ante quis inceptos, est elementum praesent feugiat congue felis <mark>nulla, habitasse habitant eros</mark> pharetra viverra fermentum. Odio morbi volutpat pulvinar viverra vehicula, dictum scelerisque lobortis tortor ornare, auctor habitant praesent curae. Sagittis diam proin maecenas etiam mollis porttitor condimentum ornare imperdiet, tristique pulvinar primis <mark>accumsan<wbr>orci<wbr>elementum<wbr>torquent<wbr>senectus</mark>, dui iaculis volutpat fames venenatis id fusce sed.</p>
+					</article>
+				</section>
+					
+				<section>
+					<article>
+						<h3>Etiqueta pre</h3>
+						<pre>
+	Texto respetando
+	el formato original
+						</pre>
+						<figure>
+							<img src="imagen.jpg" width="300" height="150" alt="" >
+							<figcaption>Imagen muy interesante</figcaption>
+						</figure>
+						<p>
+							Mis colores favoritos son:
+							<ul>
+								<li>Rojo</li>
+								<li>Azul</li>
+								<li>Verde</li>
+								<li>Naranja</li>
+							</ul>
+							<p>Algunas definiciones intereasntes:</p>
+							<dl>
+								<dt>Ordenador</dt>
+								<dd>Máquina electrónica que procesa información</dd>
+								<dt>Memoria RAM</dt>
+								<dd>Almacenamiento temporal de datos e instrucciones</dd>
+								<dt>Disco duro</dt>
+								<dd>Almacenamiento permanente de datos de usuario, así como de sus programas instalados</dd>
+							</dl>
+						</p>
+					</article>
+					
+					<article>
+						<h3>Último artículo</h3>
+						<p>El Teorema de Pitágoras dice que: <br>
+						h<sup>2</sup> = c<sub>1</sub><sup>2</sup> + c<sub>2</sub><sup>2</sup>
+						</p>
+						<p>
+						La <abbr title="Organización Mundial de la Salud">OMS</abbr> dice que no salgas de casa si no es estrictamente necesario.
+						</p>
+						
+					</article>
+
+					<article>
+						<p>
+							<table border="1">
+								<tr>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>5</td>
+									<td>6</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>8</td>
+									<td>9</td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td>11</td>
+									<td>12</td>
+								</tr>
+							</table>
+						</p>
+						
+						<p>
+							<table border="1">
+								<caption>Mis personajes de ficción preferidos</caption>
+								<tr>
+									<th>Nombre</th>
+									<th>Apellido</th>
+								</tr>
+								<tr>
+									<td>Anastasia</td>
+									<td>Steele</td>
+								</tr>
+								<tr>
+									<td>Christian</td>
+									<td>Grey</td>
+								</tr>
+							</table>
+						</p>
+						
+						<p>
+							<table border="1">
+								<tr>
+									<td>1</td>
+									<td rowspan="2">2</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td rowspan="2">5</td>
+								</tr>
+									<td colspan="2">6</td>
+							</table>
+						</p>	
+						
+						<p>
+							<table border="1">
+								<tr>
+									<th colspan="3">DAW</th>
+								</tr>
+								<tr>
+									<td rowspan="3">Primero</td>
+									<td colspan="2">Bases de Datos</td>
+								</tr>
+								<tr>
+									<td>LM</td>
+									<td>4</td>
+								</tr>
+								<tr>
+									<td>BD</td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<td rowspan="3">Segundo</td>
+									<td colspan="2">DWES</td>
+								</tr>
+								<tr>
+									<td colspan="2">DWEC</td>
+								</tr>
+								<tr>
+									<td colspan="2">DIW</td>
+								</tr>
+							</table>
+						</p>
+						
+						<p>
+							<table border="1">
+								<thead>
+									<tr>
+										<th colspan="2">Resultados</th>
+										<th colspan="2">Trimestre</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="2">Compras</td>
+										<td>1</td>
+										<td>1000</td>
+									</tr>
+									<tr>
+										<td colspan="2">Ventas</td>
+										<td>2</td>
+										<td>3000</td>
+									</tr>
+									<tr>
+										<td colspan="2" rowspan="2">Administración</td>
+										<td>4</td>
+										<td>750</td>
+									</tr>
+									<tr>
+										<td colspan="2">Anual: 500</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td>Total</td>
+										<td colspan="3">5250 millones</td>
+									</tr>
+								</tfoot>
+							</table>
+						</p>
+					</article>
+				</section>
+			</div>
+			
+			<aside>
+				<img src="imagen.jpg" width="500" height="250" alt="" >
+			</aside>
+		</main>
+
+		<footer id="piedepag">
+			<p>
+			<bdo dir="rtl">Este texto se leerá de derecha a izquierda</bdo>
+			</p>
+			
+			<figure>
+				<picture>
+					<source media="(min-width:800px)" srcset="icono.svg">
+					<source media="(min-width:600px)" srcset="icono.png">
+					<img src="imagen.jpg">
+				</picture>
+				<figcaption>Picture dentro de figure</figcaption>
+			</figure>
+			
+			<p>Este es el final de mi página web. <a href="#encabezado">Volver arriba</a></p>
+		</footer>
+	</body>
+</html>
