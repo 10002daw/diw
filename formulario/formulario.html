@@ -7,7 +7,7 @@
 		<meta name="author" content="Eduardo Jiménez">
 		<meta name="keywords" content="internet,interfaces,html,html5,páginas web">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
+		<meta http-equiv="content-language" content="es">
 		<!-- <base href="http://www.midominio.com"> -->
 
 		<link rel="icon" href="icono.png" type="image/png">
@@ -20,7 +20,7 @@
 	<body>
 		
 		<main id="principal">
-			<form name="formulario" method="get" action="procesar.php">
+			<form name="formulario" method="post" action="procesar.php">
 				<fieldset>
 					<legend>Datos personales</legend>
 					<p>
@@ -37,7 +37,7 @@
 					</fieldset>
 					<p>
 						<label for="fecnac">Fecha de nacimiento: </label>
-						<input type="date" name="fecnac" id="fecnac" value="2000-12-15">
+						<input type="date" name="fecnac" id="fecnac" value="2000-12-15" readonly>
 					</p>
 					<p>
 						<label for="expe">Años trabajados: </label>
@@ -49,11 +49,11 @@
 					</p>
 					<p>
 						<label for="telefono">Teléfono: </label>
-						<input type="tel" pattern="[0-9]{9}" name="telefono" id="telefono">
+						<input type="tel" pattern="[0-9]{9}" name="telefono" id="telefono" autofocus>
 					</p>
 					<p>
 						<label for="pagina">Página web personal: </label>
-						<input type="url" name="pagina" id="pagina">
+						<input type="url" name="pagina" id="pagina" disabled>
 					</p>
 					<fieldset>
 						<legend>Intereses:</legend>
@@ -73,6 +73,28 @@
 					<p>
 						<label for="satisfaccion">Grado de satisfacción con el formulario (1 a 100):</label>
 						<input type="range" name="satisfaccion" id="satisfaccion" min="1" max="100" value="75">
+					</p>
+					<p>
+						<label for="desplegable">Turno de trabajo:</label>
+						<select name="desplegable" id="desplegable">
+							<option value="M">Mañana</option>
+							<option value="T">Tarde</option>
+							<option value="N">Noche</option>
+						</select>
+					</p>
+					<p>
+						<datalist name="opciones" id="opciones">
+							<option value="1" label="de 8 a 12"> 
+							<option value="2" label="de 12 a 16">
+							<option value="3" label="de 16 a 20">
+							<option value="4" label="de 20 a 00">
+						</datalist>
+						<label for="horario">Elija su horario preferido:</label>
+						<input list="opciones" name="horario" id="horario">
+					</p>
+					<p>
+						<label for="cometario">Escribe tu opinión sobre nuestra página web:</label>
+						<textarea name="comentario" id="comentario" rows="5" cols="40" spellcheck="true">Escribe tu comentario aquí...</textarea>
 					</p>
 					<p>
 						<input type="submit" value="Enviar">
