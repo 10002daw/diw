@@ -18,8 +18,14 @@
             <form method="post" action="form.php">
                 <fieldset>
                     <legend>Ejemplo de uso de expresiones regulares</legend>
-                    <label for="campo">Introduzca el contenido del campo:</label>
-                    <input type="text" maxlength="20" pattern="\d{1,8}[A-Z]">
+					<label for="campo">Introduzca el contenido del campo:</label>
+					<!--
+					<input type="text" maxlength="20" pattern="(?=.+[a-z])(?=.+[A-Z])(?=.+[0-9])(?=.+\W)(.{8,})">
+					-->
+					<!--
+					<input type="text" maxlength="20" pattern="(?!.*00)(?!.*11)(?!.*22)(?!.*33)(?!.*44)(?!.*55)([0-5]{4})">
+					<input type="text" maxlength="20" pattern="(?!.*(00|11|22|33|44|55))([0-5]{4})">
+					-->
                     <br>
                     <input type="submit" value="Enviar">
                 </fieldset>
