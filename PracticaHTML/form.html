@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+
+        <h1>Please input your data</h1>
+
+        <form method="post" action="">
+
+            <fieldset>
+                <legend>Personal information</legend>
+
+                <fieldset>
+                    <legend>Title:</legend>
+                    <input type="radio" name="title" value="ms" id="ms">
+                    <label for="ms">Ms.</label>
+                    <input type="radio" name="title" value="mrs" id="mrs">
+                    <label for="mrs">Mrs.</label>
+                    <input type="radio" name="title" value="mr" id="mr">
+                    <label for="mr">Mr.</label>
+                    <input type="radio" name="title" value="dr" id="dr">
+                    <label for="dr">Dr.</label>
+                    <input type="radio" name="title" value="mx" id="mx">
+                    <label for="mx">Mx.</label>
+                    <input type="radio" name="title" value="ind" id="ind" checked>
+                    <label for="ind">Ind.</label>
+                </fieldset>
+
+                <p>
+                    <label for="first_name">First Name:</label>
+                    <input name="first_name" id="first_name">
+
+                    <label for="last_name">Last Name:</label>
+                    <input name="last_name" id="last_name">
+                </p>
+
+                <p>
+                    <label for="birthdate">Birthdate:</label>
+                    <input type="date" name="birthdate" id="birthdate">
+                </p>
+
+                <p>
+                    <label for="city">City:</label>
+                    <input name="city" id="city">
+
+                    <label for="postcode">Postcode:</label>
+                    <input name="postcode" id="postcode">
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Subscription information</legend>
+
+                <p>
+                    <datalist name="types" id="types">
+                        <option value="1" label="de 8 a 12"> 
+                        <option value="2" label="de 12 a 16">
+                        <option value="3" label="de 16 a 20">
+                        <option value="4" label="de 20 a 00">
+                    </datalist>
+                    <label for="sub_type">Subscription type:</label>
+                    <input list="types" name="sub_type" id="sub_type">
+                </p>
+
+                <fieldset>
+                    <legend>Areas of interest:</legend>
+                    <input type="checkbox" name="science" id="science">
+                    <label for="science">Science</label>
+                    <input type="checkbox" name="arts" id="arts">
+                    <label for="arts">Arts and Crafts</label>
+                    <input type="checkbox" name="literature" id="literature">
+                    <label for="literature">Literature</label>
+                    <input type="checkbox" name="technology" id="technology">
+                    <label for="technology">Technology and Gadgets</label>
+                    <input type="checkbox" name="self_improvement" id="self_improvement">
+                    <label for="self_improvement">Self Improvement</label>
+                </fieldset>
+
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="password" 
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?!^[^A-Za-z0-9].*)(?!.*[^A-Za-z0-9]$)(?!.*(\d)\1)(\S{8,})">
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Billing details</legend>
+
+                <p>
+                    <label for="card_type">Credit Card Type:</label>
+                    <select name="card_type" id="card_type">
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">MasterCard</option>
+                        <option value="maestro">Maestro</option>
+                    </select>
+
+                    <label for="card_number">Card Number:</label>
+                    <input name="card_number" id="card_number">
+                </p>
+
+                <p>
+                    <label for="discount">If you have a discount code please enter it here:</label>
+                    <input name="discount" id="discount" placeholder="code">
+                </p>
+
+                <p>
+                    Adittionally, you are welcome to donate an amount of your choosing to "Save the children"
+                </p>
+
+                <p>
+                    <label for="donation">Please enter your donation (from 0 to 50$):</label>
+                    <input type="range" name="donation" id="donation" min="0" max="50" value="5">
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Feedback</legend>
+
+                <p>
+                    <label for="feedback">We would love to hear your suggestions to improve our site.</label>
+                </p>
+
+                <p>
+                    <textarea name="feedback" id="feedback" rows="5" cols="70"></textarea>
+                </p>
+
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Send data">
+            </p>
+
+        </form>
+
+    </main>
+</body>
+</html>
