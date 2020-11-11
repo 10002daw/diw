@@ -17,39 +17,33 @@
 
                 <fieldset>
                     <legend>Title:</legend>
-                    <input type="radio" name="title" value="ms" id="ms">
-                    <label for="ms">Ms.</label>
-                    <input type="radio" name="title" value="mrs" id="mrs">
-                    <label for="mrs">Mrs.</label>
-                    <input type="radio" name="title" value="mr" id="mr">
-                    <label for="mr">Mr.</label>
-                    <input type="radio" name="title" value="dr" id="dr">
-                    <label for="dr">Dr.</label>
-                    <input type="radio" name="title" value="mx" id="mx">
-                    <label for="mx">Mx.</label>
-                    <input type="radio" name="title" value="ind" id="ind" checked>
-                    <label for="ind">Ind.</label>
+                    <input type="radio" name="title" value="ms" id="ms"><label for="ms">Ms.</label>
+                    <input type="radio" name="title" value="mrs" id="mrs"><label for="mrs">Mrs.</label>
+                    <input type="radio" name="title" value="mr" id="mr"><label for="mr">Mr.</label>
+                    <input type="radio" name="title" value="dr" id="dr"><label for="dr">Dr.</label>
+                    <input type="radio" name="title" value="mx" id="mx"><label for="mx">Mx.</label>
+                    <input type="radio" name="title" value="ind" id="ind" checked><label for="ind">Ind.</label>
                 </fieldset>
 
                 <p>
                     <label for="first_name">First Name:</label>
-                    <input name="first_name" id="first_name">
+                    <input name="first_name" id="first_name" size="15" pattern="[a-zA-Z\s-]*" autofocus required>
 
                     <label for="last_name">Last Name:</label>
-                    <input name="last_name" id="last_name">
+                    <input name="last_name" id="last_name" pattern="[a-zA-Z\s-]*" required>
                 </p>
 
                 <p>
                     <label for="birthdate">Birthdate:</label>
-                    <input type="date" name="birthdate" id="birthdate">
+                    <input type="date" name="birthdate" id="birthdate" required>
                 </p>
 
                 <p>
                     <label for="city">City:</label>
-                    <input name="city" id="city">
+                    <input name="city" id="city" pattern="[a-zA-Z\s-]*">
 
                     <label for="postcode">Postcode:</label>
-                    <input name="postcode" id="postcode">
+                    <input name="postcode" id="postcode" size="5" pattern="\d{5}">
                 </p>
 
             </fieldset>
@@ -59,17 +53,18 @@
 
                 <p>
                     <datalist name="types" id="types">
-                        <option value="1" label="de 8 a 12"> 
-                        <option value="2" label="de 12 a 16">
-                        <option value="3" label="de 16 a 20">
-                        <option value="4" label="de 20 a 00">
+                        <option value="W" label="Weekly Subscription"> 
+                        <option value="M" label="Monthly Subscription">
+                        <option value="Y" label="Yearly Subscription">
+                        <option value="U" label="Unlimited Subscription">
                     </datalist>
                     <label for="sub_type">Subscription type:</label>
-                    <input list="types" name="sub_type" id="sub_type">
+                    <input list="types" name="sub_type" id="sub_type" required>
                 </p>
 
                 <fieldset>
                     <legend>Areas of interest:</legend>
+
                     <input type="checkbox" name="science" id="science">
                     <label for="science">Science</label>
                     <input type="checkbox" name="arts" id="arts">
@@ -85,7 +80,8 @@
                 <p>
                     <label for="password">Password:</label>
                     <input type="password" name="password" id="password" placeholder="password" 
-                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?!^[^A-Za-z0-9].*)(?!.*[^A-Za-z0-9]$)(?!.*(\d)\1)(\S{8,})">
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?!^[^A-Za-z0-9].*)(?!.*[^A-Za-z0-9]$)(?!.*(\d)\1)(\S{8,})"
+                    required>
                 </p>
 
             </fieldset>
@@ -95,19 +91,22 @@
 
                 <p>
                     <label for="card_type">Credit Card Type:</label>
-                    <select name="card_type" id="card_type">
+                    <select name="card_type" id="card_type" required>
+                        <option value="">--Please select</option>
                         <option value="visa">Visa</option>
                         <option value="mastercard">MasterCard</option>
                         <option value="maestro">Maestro</option>
                     </select>
 
                     <label for="card_number">Card Number:</label>
-                    <input name="card_number" id="card_number">
+                    <input name="card_number" id="card_number" 
+                    pattern="((((\d{4}-){3})|((\d{4} ){3})|((\d{4}){3}))\d{4})" required>
                 </p>
 
                 <p>
                     <label for="discount">If you have a discount code please enter it here:</label>
-                    <input name="discount" id="discount" placeholder="code">
+                    <input name="discount" id="discount" 
+                    pattern="(?!.*(\d)\1)([A-Z]{3}[0-3]{2})" placeholder="code">
                 </p>
 
                 <p>
