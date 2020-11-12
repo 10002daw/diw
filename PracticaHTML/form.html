@@ -10,7 +10,7 @@
 
         <h1>Please input your data</h1>
 
-        <form method="post" action="">
+        <form method="post" action="form.php">
 
             <fieldset>
                 <legend>Personal information</legend>
@@ -52,34 +52,29 @@
                 <legend>Subscription information</legend>
 
                 <p>
-                    <datalist name="types" id="types">
+                    <datalist id="sub_types">
                         <option value="W" label="Weekly Subscription"> 
                         <option value="M" label="Monthly Subscription">
                         <option value="Y" label="Yearly Subscription">
                         <option value="U" label="Unlimited Subscription">
                     </datalist>
                     <label for="sub_type">Subscription type:</label>
-                    <input list="types" name="sub_type" id="sub_type" required>
+                    <input list="sub_types" name="sub_type" id="sub_type" required>
                 </p>
 
                 <fieldset>
                     <legend>Areas of interest:</legend>
 
-                    <input type="checkbox" name="science" id="science">
-                    <label for="science">Science</label>
-                    <input type="checkbox" name="arts" id="arts">
-                    <label for="arts">Arts and Crafts</label>
-                    <input type="checkbox" name="literature" id="literature">
-                    <label for="literature">Literature</label>
-                    <input type="checkbox" name="technology" id="technology">
-                    <label for="technology">Technology and Gadgets</label>
-                    <input type="checkbox" name="self_improvement" id="self_improvement">
-                    <label for="self_improvement">Self Improvement</label>
+                    <input type="checkbox" name="science" id="science"><label for="science">Science</label>
+                    <input type="checkbox" name="arts" id="arts"><label for="arts">Arts and Crafts</label>
+                    <input type="checkbox" name="literature" id="literature"><label for="literature">Literature</label>
+                    <input type="checkbox" name="technology" id="technology"><label for="technology">Technology and Gadgets</label>
+                    <input type="checkbox" name="self_improvement" id="self_improvement"><label for="self_improvement">Self Improvement</label>
                 </fieldset>
 
                 <p>
                     <label for="password">Password:</label>
-                    <input type="password" name="password" id="password" placeholder="password" 
+                    <input type="password" name="password" id="password" placeholder="password" size="15"
                     pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?!^[^A-Za-z0-9].*)(?!.*[^A-Za-z0-9]$)(?!.*(\d)\1)(\S{8,})"
                     required>
                 </p>
@@ -105,7 +100,7 @@
 
                 <p>
                     <label for="discount">If you have a discount code please enter it here:</label>
-                    <input name="discount" id="discount" 
+                    <input name="discount" id="discount" size="8"
                     pattern="(?!.*(\d)\1)([A-Z]{3}[0-3]{2})" placeholder="code">
                 </p>
 
@@ -128,7 +123,7 @@
                 </p>
 
                 <p>
-                    <textarea name="feedback" id="feedback" rows="5" cols="70"></textarea>
+                    <textarea name="feedback" id="feedback" rows="5" cols="50"></textarea>
                 </p>
 
             </fieldset>
