@@ -1,0 +1,14 @@
+/*Archivo: primera.css */
+
+p {
+    color: green;
+}
+
+h1, h2, h3, h4 {
+    color: blue;
+}
+
+/* Elementos li que esten dentro de un elemento ul */
+ul li {
+    color: orchid;
+}
