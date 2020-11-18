@@ -1,58 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="description" content="">
+		<meta name="description" content="Website of a music teacher who is passionate about ukulele.">
 		<meta name="author" content="Jason Carter">
-		<meta name="keywords" content="ukulele">
+		<meta name="keywords" content="ukulele, reviews, tops, videos, events, courses">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<meta http-equiv="content-language" content="en">
 
 		<link rel="icon" href="favicon.png" type="image/png">
 
-		<title>Ukumania - Home</title>
+		<title>Ukumania</title>
 	</head>
 	
 	<body>
 
-		<header>
+		<header id="header">
 			<h1>Ukumania</h1>
 		</header>
 
 		<nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-            </ul>
-        </nav>
+			<a href="index.html">Home</a>
+			<a href="blog.html">Blog</a>
+            <a href="events.html">Events</a>
+		</nav>
+		
+		<hr>
 
 		<main>
-			<div>
-                <section>
-                    <article>
-						
-					</article>
-                    <article></article>
-                </section>
-
-                <section>
-                    <article></article>
-                    <article></article>
-                </section>
-			</div>
 			
-			<aside>
-				<ol>
-					<il></il>
-				</ol>
-			</aside>
+			<section id="youtube">
+				<h2>My YouTube Channel</h2>
 
+				<article id="last_video">
+					<h3>Last video</h3>
+
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/nS4zHlFAeNk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</article>
+
+				<article id="about_my_channel">
+					<h3>About my Youtube Channel</h3>
+
+					<p>The best FREE ukulele lessons anywhere on the web - you WILL be able to play a song after your first lesson! Requests for future lesson and video ideas are always welcome. Check out https://www.grabyouruke.com to see what ukes I recommend and how I film my videos!</p>
+
+					<p>NEW VIDEOS TWICE A WEEK!</p>
+
+					<a href="https://www.youtube.com/c/TheUkuleleTeacher/">Link to my Youtube Channel</a>
+				</article>
+			</section>
+
+			<section id="events">
+				<h2>Events</h2>
+				<article id="last_event">
+					<h3>Los Angeles Ukulele Festival</h3>
+					
+					<p>This weekend I visited the first ever Los Angeles International Ukulele Festival! It was awesome!</p>
+
+					<p>For more info about the event, check out: <a href="http://www.losangelesukulelefestival.com">LA Ukulele Festival</a></p>
+						
+					<picture>
+						<source media="(min-width:700px)" srcset="images/la-ukulele-fest-750.jpg">
+						<source media="(min-width:350px)" srcset="images/la-ukulele-fest-400.jpg">
+						<img alt="" src="images/la-ukulele-fest-750.jpg">
+					</picture>
+					
+				</article>
+			</section>
 		</main>
 
-		<footer></footer>
+		<hr>
+
+		<footer>
+			<a href="#header">Go to top</a>
+		</footer>
         
     </body>
 </html>
-
-details open
