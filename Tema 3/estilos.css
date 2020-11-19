@@ -30,12 +30,12 @@ header h1, header h2 {
 	color: seagreen;
 }
 
-article+article a {
+article + article a {
 /*#art2 a {*/
 	color: green;
 	font-weight: bold;
 }
 
-p>span {
+p > span {
 	font-variant: small-caps;
 }
