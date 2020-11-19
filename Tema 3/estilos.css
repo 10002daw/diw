@@ -1,0 +1,41 @@
+/*Hoja de estilos*/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-color: lightgoldenrodyellow;
+}
+
+article {
+	font-family: Arial;
+}
+
+main h2, main h3, main h4 {
+	color: blue;
+	font-family: Georgia;
+}
+
+section h2, footer h2 {
+	color: darkred;
+}
+
+.internacional {
+	background-color: lightblue;
+}
+
+header h1, header h2 {
+	font-family: Verdana;
+	color: seagreen;
+}
+
+article+article a {
+/*#art2 a {*/
+	color: green;
+	font-weight: bold;
+}
+
+p>span {
+	font-variant: small-caps;
+}
