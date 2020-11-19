@@ -8,12 +8,6 @@
 <body>
     <?php
         if ( $_POST ) {
-            foreach ( $_POST as $key => $value ) {
-                echo $key.": ".$value."<br>";
-            }
-        }
-
-        if ( $_POST ) {
     ?>
     <table border="1">
         <tr>
@@ -43,6 +37,47 @@
             <td>Postcode</td>
             <td><?=$_POST[postcode]?></td>
         </tr>
+
+        <tr>
+            <th colspan="2">Subscription information</th>
+        </tr>
+        <tr>
+            <td>Subscription type</td>
+            <td><?=$_POST[sub_type]?></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><?=$_POST[password]?></td>
+        </tr>
+
+		<tr>
+            <th colspan="2">Billing details</th>
+        </tr>
+        <tr>
+            <td>Card type</td>
+            <td><?=$_POST[card_type]?></td>
+        </tr>
+        <tr>
+            <td>Card number</td>
+            <td><?=$_POST[card_number]?></td>
+        </tr>
+        <tr>
+            <td>Discount</td>
+            <td><?=$_POST[discount]?></td>
+        </tr>
+        <tr>
+            <td>Donation</td>
+            <td><?=$_POST[donation]?></td>
+        </tr>
+
+        <tr>
+            <th colspan="2">Feedback</th>
+        </tr>
+        <tr>
+            <td>Feedback</td>
+            <td><?=$_POST[feedback]?></td>
+        </tr>
+
     </table>
     <?php
         }
