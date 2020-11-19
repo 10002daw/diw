@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="description" content="">
+		<meta name="description" content="Website of a music teacher who is passionate about ukulele.">
 		<meta name="author" content="Jason Carter">
-		<meta name="keywords" content="ukulele">
+		<meta name="keywords" content="ukulele, reviews, tops, videos, events, courses">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<meta http-equiv="content-language" content="en">
 
 		<link rel="icon" href="favicon.png" type="image/png">
 
@@ -15,42 +14,123 @@
 	
 	<body>
 
-		<header>
+		<header id="header">
 			<h1>Ukumania</h1>
+
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="blog.html">Blog</a>
+				<a href="events.html">Events</a>
+				<a href="register.html">Register</a>
+			</nav>
 		</header>
 
-		<nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-            </ul>
-        </nav>
+		<hr>
 
 		<main>
-			<div>
-                <section>
-                    <article>
-						<h2></h2>
-					</article>
-                    <article></article>
-                </section>
 
-                <section>
-                    <article></article>
-                    <article></article>
-                </section>
-			</div>
-			
 			<aside>
-				<ol>
-					<il></il>
-				</ol>
+				<h3>Table of contents</h3>
+				<details open>
+					<summary>Show/Hide</summary>
+					<ul>
+						<li><a href="#next_event">Next event</a>
+							<ul>
+								<li><a href="#description">Description</a></li>
+								<li><a href="#schedule">Schedule</a></li>
+							</ul>
+						</li>
+					</ul>
+				</details>
 			</aside>
 
+			<article id="next_event">
+				<h2>Intensive Ukulele Courses</h2>
+
+				<p id="description">This complete ukulele course is aimed at both right-handed and left-handed people, we are going to explain from how to hold your ukulele to how to make your own strums, it is a course that is focused so that at the end of it you can have the bases to start playing any song you want. It does not matter if you have never played any other instrument, this course is designed for beginners who are looking for a more organized method to learn to play.</p>
+
+				<table id="schedule" border="1">
+					<caption>Event schedule</caption>
+					<thead>
+						<tr>
+							<td></td>
+							<th>Monday</th>
+							<th>Tuesday</th>
+							<th>Wednesday</th>
+							<th>Thursday</th>
+							<th>Friday</th>
+						</tr>
+					</thead>
+			
+					<tbody>
+						<tr>
+							<th rowspan="2">10:00 - 12:00</th>
+							<td rowspan="2">Posture<br>(group A)</td>
+							<td>Chords (A)</td>
+							<td rowspan="2">Tuning<br>Ukulele (A)</td>
+							<td rowspan="4">History of <br>Ukulele<sub>(1)</sub></td>
+							<td rowspan="9">Practice songs<br>and concert<sub>(2)</sub></td>
+						</tr>
+			
+						<tr>
+							<td>Songs (A)</td>
+						</tr>
+			
+						<tr>
+							<th rowspan="2">12:00 - 14:00</th>
+							<td rowspan="2">Posture<br>(group B)</td>
+							<td>Chords (B)</td>
+							<td rowspan="2">Tuning<br>Ukulele (B)</td>
+						</tr>
+			
+						<tr>
+							<td>Songs (B)</td>
+						</tr>
+			
+						<tr>
+							<th>14:00 - 16:00</th>
+							<td colspan="4">Break</td>
+						</tr>
+			
+						<tr>
+							<th rowspan="2">16:00 - 18:00</th>
+							<td rowspan="2">Holding ukulele<br>(group A)</td>
+							<td>Questions (A)</td>
+							<td rowspan="4" colspan="2">Practice songs<sub>(2)</sub></td>
+						</tr>
+			
+						<tr>
+							<td>Questions (B)</td>
+						</tr>
+			
+						<tr>
+							<th rowspan="2">18:00 - 20:00</th>
+							<td rowspan="2">Holding ukulele<br>(group B)</td>
+							<td>Tips (A)</td>							
+						</tr>
+			
+						<tr>
+							<td>Tips (B)</td>
+						</tr>
+					</tbody>
+
+					<tfoot>
+						<tr>
+							<td colspan="6">
+								<p><strong>(1)</strong> <em>In the assembly hall</em></p>
+								<p><strong>(2)</strong> <em>On the outside stage</em></p>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</article>
 		</main>
 
-		<footer></footer>
+		<hr>
+
+		<footer>
+			<a href="#header">Go to top</a>
+		</footer>
         
     </body>
 </html>

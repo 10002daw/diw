@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Website of a music teacher who is passionate about ukulele.">
+		<meta name="author" content="Jason Carter">
+		<meta name="keywords" content="ukulele, reviews, tops, videos, events, courses">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+		<link rel="icon" href="favicon.png" type="image/png">
+
+		<title>Ukumania - Register</title>
+	</head>
+	
+	<body>
+
+		<header id="header">
+			<h1>Ukumania</h1>
+
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="blog.html">Blog</a>
+				<a href="events.html">Events</a>
+				<a href="register.html">Register</a>
+			</nav>
+		</header>
+
+		<hr>
+
+		<main>
+            <form method="post" action="register.php">
+                <fieldset>
+                    <legend>Register</legend>
+                    <p>
+                        <label>Username: <input type="text" name="username" id="username" pattern="\w{4,20}" size="15" required></label>
+                    </p>
+
+                    <p>
+                        <label>Password: <input type="password" name="pw" id="pw" minlength="8" maxlength="20" size="16" required></label>
+                    </p>
+
+                    <p>
+                        <label>Email: <input type="email" name="email" id="email" size="19" required></label>
+                    </p>
+
+                    <p>
+                        <label>Mobile number: <input type="tel" name="mobile_number" id="mobile_number" pattern="\d{9}" size="10" required></label>
+                    </p>
+
+                    <fieldset>
+                        <legend>Ukulele questions</legend>
+
+                        <p>
+                            <label>How many ukuleles do you have? <input type="number" name="number" id="number" min="0" value="0" required></label>
+                        </p>
+
+                        <p>
+                            <label for="favourite_uke">Favourite kind of ukulele</label>
+                            <select name="favourite_uke" id="favourite_uke" required>
+                                <option value="">Select your favourite type of ukulele</option>
+                                <option value="soprano">Soprano</option>
+                                <option value="concert">Concert</option>
+                                <option value="tenor">Tenor</option>
+                                <option value="baritone">Baritone</option>
+                            </select>
+                        </p>
+
+                        <fieldset>
+                            <legend>Ukulele fan type:</legend>
+                            <input type="checkbox" name="teacher" id="teacher"><label for="teacher">Teacher</label>
+                            <input type="checkbox" name="student" id="student"><label for="student">Student</label>
+                            <input type="checkbox" name="collector" id="collector"><label for="collector">Collector</label>
+                        </fieldset>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Personal information</legend>
+                        <p>
+                            <label>Birthday: <input type="date" name="birthday" id="birthday"></label>
+                        </p>
+
+                        <fieldset>
+                            <legend>Gender: </legend>
+                            <input type="radio" name="gender" value="f" id="female"><label for="female">Female</label>
+                            <input type="radio" name="gender" value="m" id="male"><label for="male">Male</label>
+                            <input type="radio" name="gender" value="o" id="other"><label for="other">Other</label>
+                            <input type="radio" name="gender" value="nts" id="not_to_say" checked><label for="not_to_say">Prefer not to say</label>
+                        </fieldset>
+
+                        <p>
+                            <label>Favourite color: <input type="color" name="color" id="color"></label>
+                        </p>
+
+                        <p>
+                            <label>Profile photo: <input type="file" name="photo" id="photo"></label>
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <input type="submit" value="Register"> <input type="reset" value="Reset">
+                    </p>
+                </fieldset>
+            </form>			
+		</main>
+
+		<hr>
+
+		<footer>
+			<a href="#header">Go to top</a>
+		</footer>
+        
+    </body>
+</html>
