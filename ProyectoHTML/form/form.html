@@ -27,7 +27,7 @@
 
                 <p>
                     <label for="first_name">First Name:</label>
-                    <input name="first_name" id="first_name" size="15" pattern="[a-zA-Z\s-]*" autofocus required>
+                    <input name="first_name" id="first_name" size="15" pattern="[a-zA-Z\s\-]*" autofocus required>
 
                     <label for="last_name">Last Name:</label>
                     <input name="last_name" id="last_name" pattern="[a-zA-Z\s-]*" required>
@@ -40,7 +40,7 @@
 
                 <p>
                     <label for="city">City:</label>
-                    <input name="city" id="city" pattern="[a-zA-Z\s-]*">
+                    <input name="city" id="city" pattern="[a-zA-Z\s\-]*">
 
                     <label for="postcode">Postcode:</label>
                     <input name="postcode" id="postcode" size="5" pattern="\d{5}">
@@ -95,7 +95,7 @@
 
                     <label for="card_number">Card Number:</label>
                     <input name="card_number" id="card_number" 
-                    pattern="((((\d{4}-){3})|((\d{4} ){3})|((\d{4}){3}))\d{4})" required>
+                    pattern="((((\d{4}-){3})|((\d{4}\s){3})|((\d{4}){3}))\d{4})" required>
                 </p>
 
                 <p>
