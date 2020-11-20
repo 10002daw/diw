@@ -39,3 +39,55 @@ article + article a {
 p > span {
 	font-variant: small-caps;
 }
+/*
+header h2:nth-child(3) {
+	color: orange;
+}
+
+#art2 p:nth-child(odd) {
+	background-color: lightpink;
+}
+
+#art2 p:nth-child(even) {
+	background-color: lightgray;
+}
+
+p a:only-child {
+	color: red;
+}
+*/
+.articulos p:first-of-type {
+	font-style: oblique;
+	color: darkslateblue;
+}
+
+.articulos h4:last-of-type {
+	color: darkolivegreen;
+}
+
+#art2 h4:first-of-type {
+	color: grey;
+}
+
+#art2 p :not(a) {
+	font-family: Verdana;
+	color: red;
+}
+
+.piedepag a:hover {
+	color:deeppink;
+	font-size: 24pt;
+}
+
+.lomas li:active {
+	background-color: dimgray;
+}
+
+#art1 a:link {
+	color: teal;
+}
+
+#art1 a:visited {
+	color: sandybrown;
+	text-decoration: none;
+}
