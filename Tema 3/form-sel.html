@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8″">
+		<link rel="stylesheet" href="form-sel.css">
+		<title>Formulario de prueba, selectores</title>
+		
+		
+	</head>
+
+	<body>
+		<main>
+			<h1>Introduzca datos:</h1>
+			<form name="formulario" method="post">
+				<fieldset class="personales">
+					<legend>Datos personales</legend>
+					<p>
+						<label for="nom">Nombre:  </label>
+						<input type="text" name="nom" maxlength="15" size="15" required placeholder="Obligatorio"> 
+						<br><br>
+						<label for="ape">Apellidos:  </label>
+						<input type="text" name="ape" maxlength="40" size="40" required placeholder="Obligatorio">						
+						
+					</p>
+					<fieldset class="edades">
+						<legend>Edad: </legend>
+					 <input type="radio" id="e1" name="edad" value="1">
+  					 <label for="e1">18 a 25</label>
+
+  					 <input type="radio" id="e2" name="edad" value="2">
+  					 <label for="e2">26 a 35</label>
+
+  					 <input type="radio" id="e3" name="edad" value="3">
+  					 <label for="e3">36 a 45</label>
+
+  					 <input type="radio" id="e4" name="edad" value="4">
+  					 <label for="e4">46 a 55</label>
+
+  					 <input type="radio" id="e5" name="edad" value="5">
+  					 <label for="e5">Mayor de 55</label>
+
+  					 <input type="radio" id="e6" name="edad" value="6" checked>
+  					 <label for="e6">NS/NC</label>
+						
+					</fieldset><br>
+
+					<fieldset class="intereses">
+							<legend>Intereses:</legend>
+							<label for="c1">Arte y Literatura</label><input type="checkbox" name="c1"><br>
+							<label for="c2">Ciencia y Tecnología</label><input type="checkbox" name="c2"><br>
+							<label for="c3">Política y Sociedad</label><input type="checkbox" name="c3"><br>
+							<label for="c4">Ocio y Deporte</label><input type="checkbox" name="c4"><br>
+							<label for="c5">Cinte y Televisión</label><input type="checkbox" name="c5"><br>
+					</fieldset>
+					
+					<p>
+						<label for="cp">Código postal:  </label>
+						<input type="text" name="cp" maxlength="6" size="6" pattern="[0-9]{5}">
+					</p>
+					
+				</fieldset>
+				<fieldset class="otros">
+					<legend>Otros datos</legend>
+						
+					<p>
+						<h2>Color favorito</h2>
+						<input type="radio" id="c1" name="color" value="1" checked>
+  					 	<label for="c1">Rojo</label>
+
+  					 	<input type="radio" id="c2" name="color" value="2">
+  					 	<label for="c2">Azul</label>
+
+  					 	<input type="radio" id="c3" name="color" value="3">
+  					 	<label for="c3">Amarillo</label>
+
+  					 	<input type="radio" id="c4" name="color" value="4">
+  					 	<label for="c4">Verde</label>
+					</p>	
+						
+				<p>
+					
+					<h2>Asignaturas favoritas</h2>
+							<label for="a1">DWEC</label>
+							<input type="checkbox" name="a1"><br>
+							
+							<label for="a2">DWES</label>
+							<input type="checkbox" name="a2"><br>
+							
+							<label for="a3">DIW</label>
+							<input type="checkbox" name="a3" checked><br>
+							
+							<label for="a4">DAW</label>
+							<input type="checkbox" name="a4"><br>
+							
+							<label for="a5">EIEM</label>
+							<input type="checkbox" name="a5"><br>
+
+							
+				</p>
+
+				<p>
+					<h2>Probabilidad de aprobar</h2>
+					<label for="n1">Porcentaje</label>
+					<input type="number" min="0" max="100" size="5" value="50" step="5" >
+				</p>
+
+				</fieldset>
+
+				<br>
+				<input type="submit" name="Enviar" value="Enviar formulario">
+
+			</form>
+
+
+		</main>		
+
+	</body>
+</html>

@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+    background-color: lightblue;
+}
+
+input:required::placeholder {
+    color: red;
+    font-style: oblique;
+}
+
+input:focus {
+    border: 3px solid purple;
+}
+
+input:default {
+    box-shadow: -4px -4px 3px green;
+}
+
+input:focus :last-child{
+    color: green;
+}
+
+/*helvetica "courier new" botones de radio*/
