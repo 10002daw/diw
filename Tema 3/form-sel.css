@@ -1,27 +1,67 @@
 * {
     box-sizing: border-box;
     font-family: Helvetica;
+    color: royalblue;
+    font-weight: bold;
 }
 
 body {
-    background-color: lightblue;
+    background-color: paleturquoise;
+}
+
+label {
+    color: darkgreen;
+}
+
+input {
+    background-color: lightgoldenrodyellow;
+}
+
+fieldset {
+    background-color: lavender;
+}
+
+fieldset>fieldset {
+    background-color: peachpuff;
+}
+
+input:required {
+    background-color: mistyrose;
 }
 
 input:required::placeholder {
-    color: red;
-    font-style: oblique;
+    color: deeppink;
+    font-weight: normal;
+    font-style: italic;
+    background-color: peachpuff;
 }
 
 input:focus {
-    border: 3px solid purple;
+    border: 3px solid mediumorchid;
 }
 
-input:default {
-    box-shadow: -4px -4px 3px green;
+input[type="radio"]:default {
+    box-shadow: -3px -3px 3px green;
 }
 
-input:focus :last-child{
+input[type="radio"] + label {
+    color: blueviolet;
+}
+
+.otros h2 {
+    color: darkorchid;
+    font-style: italic;
+}
+
+input[type="checkbox"]:default {
+    box-shadow: 2px 2px 3px orange;
+}
+
+input:checked + label {
     color: green;
 }
 
+input:invalid:not(:required) {
+    background-color: orangered;
+}
 /*helvetica "courier new" botones de radio*/
