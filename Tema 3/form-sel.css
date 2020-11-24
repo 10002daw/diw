@@ -1,12 +1,15 @@
 * {
     box-sizing: border-box;
-    font-family: Helvetica;
-    color: royalblue;
-    font-weight: bold;
 }
 
 body {
     background-color: paleturquoise;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+h1, legend {
+    color: royalblue;
 }
 
 label {
@@ -15,13 +18,25 @@ label {
 
 input {
     background-color: lightgoldenrodyellow;
+    font-weight: normal;
+    outline-style: none;
+}
+
+input[type="submit"] {
+    background-color: white;
 }
 
 fieldset {
     background-color: lavender;
 }
 
-fieldset>fieldset {
+.intereses label {
+    font-weight: normal;
+    font-style: italic;
+    color: seagreen;
+}
+
+fieldset > fieldset {
     background-color: peachpuff;
 }
 
@@ -34,10 +49,11 @@ input:required::placeholder {
     font-weight: normal;
     font-style: italic;
     background-color: peachpuff;
+    opacity: 0.5;
 }
 
 input:focus {
-    border: 3px solid mediumorchid;
+    border: 5px solid mediumorchid;
 }
 
 input[type="radio"]:default {
@@ -45,7 +61,8 @@ input[type="radio"]:default {
 }
 
 input[type="radio"] + label {
-    color: blueviolet;
+    color: rebeccapurple;
+    font-family: 'Courier New';
 }
 
 .otros h2 {
@@ -64,4 +81,19 @@ input:checked + label {
 input:invalid:not(:required) {
     background-color: orangered;
 }
-/*helvetica "courier new" botones de radio*/
+
+#c1:checked + label {
+    color: red;
+}
+
+#c2:checked + label {
+    color: blue;
+}
+
+#c3:checked + label {
+    color: yellow;
+}
+
+#c4:checked + label {
+    color: green;
+}

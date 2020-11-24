@@ -91,3 +91,29 @@ p a:only-child {
 	color: sandybrown;
 	text-decoration: none;
 }
+
+p::before {
+	content: "***";
+	color: red;
+}
+
+p::after {
+	content: "***";
+	color: blueviolet;
+}
+
+p::first-line {
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: bold;
+	color: orange;
+}
+p::first-letter {
+	font-size: 20pt;
+	color: black;
+}
+
+selection {
+	background-color: yellow;
+	color: teal;
+	
+}
