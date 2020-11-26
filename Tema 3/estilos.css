@@ -8,7 +8,12 @@
 }
 
 html {
-	background-color: var(--azulvioleta);
+	/*background-color: var(--azulvioleta);*/
+	background-image: url("images/Tux\ Avatar\ \(382\).png");
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-attachment: fixed;
+	background-position: left bottom;
 }
 
 article p {
@@ -22,8 +27,13 @@ article p {
 
 	text-align: justify;
 	text-align-last: justify;
-	text-decoration: overline blue;
+	text-decoration-line: overline overline;
 	text-indent: 10%;
+}
+
+.internacional {
+	background-color: indianred;
+	opacity: 1;
 }
 /*
 main h2, main h3, main h4 {
