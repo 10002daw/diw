@@ -9,7 +9,7 @@
 
 html {
 	/*background-color: var(--azulvioleta);*/
-	background-image: url("images/Tux\ Avatar\ \(382\).png");
+	/*background-image: url("images/Tux\ Avatar\ \(382\).png");*/
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-attachment: fixed;
@@ -54,6 +54,8 @@ header h1 {
 	background-color: turquoise;
 	text-shadow: 1px 1px 3px black, -1px -1px 3px black,
 	-1px 1px 3px black, 1px -1px 3px black;
+
+	margin-bottom: 15vh;
 }
 
 header h2 + h2 {
@@ -97,15 +99,16 @@ p > span {
 header h2:nth-child(3) {
 	color: orange;
 }
-
+*/
 #art2 p:nth-child(odd) {
 	background-color: lightpink;
+	padding: 0px 10%;
 }
 
 #art2 p:nth-child(even) {
 	background-color: lightgray;
 }
-
+/*
 p a:only-child {
 	color: red;
 }
@@ -171,6 +174,12 @@ selection {
 	color: teal;
 	
 }*/
+
+img {
+	width: 50%;
+	display: block;
+	margin: auto;
+}
 
 /* museomoderno-200 - latin */
 @font-face {
