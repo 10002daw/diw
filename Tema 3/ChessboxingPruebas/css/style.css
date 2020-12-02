@@ -45,6 +45,14 @@ img {
     border: 2px solid gray;
 }
 
+img:hover {
+    filter: blur(2px) 
+            grayscale(50%);
+    filter: saturate(150%);
+    filter: sepia();
+    filter: invert(0%);
+}
+
 main {
     border: 2px solid white;
     border-radius: 5px;
@@ -79,14 +87,30 @@ h2 {
     padding: 3px 3px 3px 5%;
 }
 
+article:first-child div.article-text {
+    background: radial-gradient(farthest-corner circle at top left, red, orange, yellow, green, blue, purple);
+}
+
 ul {
     border: 8px solid grey;
-    background-color: DarkSlateGrey;
+    /*background-color: DarkSlateGrey;*/
+    background: linear-gradient(205deg, rgba(255,0,0,.8), rgba(255,0,0,0) 100%),
+                linear-gradient(135deg, rgba(0,255,0,.8), rgba(0,255,0,0) 100%),
+                linear-gradient(0deg, rgba(0,0,255,.8), rgba(0,0,255,0) 100%);
     color: gainsboro;
     font-family: "Roboto Mono";
     font-style: italic;
     list-style-position: inside;
     padding: 0px 3px;
+    list-style-type: none;
+}
+
+li::before {
+    content: "🦠";
+    font-style: normal;
+    display: inline-block;
+    width: 3em;
+    /*margin-right: 3em;*/
 }
 
 li {
