@@ -16,9 +16,16 @@ body {
 
 h1, h2 {
     font-family: "Fredoka One";
-    color: DarkSlateGray;
+    color: darkslategray;
+    /*background-color: red;*/
+    transition: background-color 5s ease, color 2s ease;
 }
- 
+
+h1:hover {
+    background-color: black;
+    color: yellow;
+}
+
 p {
     font-family: "Domine";
     text-align: justify;
@@ -43,6 +50,10 @@ img {
 	display: block;
     margin: 15px auto;
     border: 2px solid gray;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-timing-function: ease;
 }
 
 img:hover {
@@ -56,13 +67,15 @@ img:hover {
     filter: drop-shadow(5px 5px 10px red);
     filter: hue-rotate(300deg);
     */
-
+    /*
     transform: scaleY(0.5) scaleX(1.5);
     transform: rotate(10deg);
     transform: skew(20deg);
     transform: translate(10px,40px);
     transform: rotate3d(1,1,0,65deg);
     transform: perspective(100px);
+    */
+    transform: scale(1) translate(200px, -500px);
 }
 
 main {
