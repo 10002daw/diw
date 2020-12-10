@@ -5,18 +5,47 @@
     border: 0;
 }
 
-tr:before {
-    float: left;
-    width: 0;
-    white-space: nowrap;
-    content:
-    ". . . . . . . . . . . . . . . . . . . . "
-    ". . . . . . . . . . . . . . . . . . . . "
-    ". . . . . . . . . . . . . . . . . . . . "
-    ". . . . . . . . . . . . . . . . . . . . ";
+html {
+    background-color: lavenderblush;
 }
 
-td {
+body {
+    width: 80vw;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+    /* This width can be whatever you like */
+    width: 100%;
+    /* Keeps extra dots from appearaing past last character */
+    overflow-x: hidden;
+}
+
+ul li:before {
+    float: left;
+    /* Keeps dots on same line as text */
+    width: 0;
+    /* Prevents word wrap */
+    white-space: nowrap;
+    /* Just a lot of dots with a space in between, no specific number */
+    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+}
+
+.producto {
+    padding-right: 0.33em;
+    /* Helps to cover dots under the words */
+    background-color: white;
+}
+
+.alergenos {
+    float: right;
     padding-left: 0.33em;
-    background: white;
+    /* Helps to cover dots under the price */
+    background-color: white;
+}
+
+.precio {
+    float: right;
+    background-color: white;
 }
