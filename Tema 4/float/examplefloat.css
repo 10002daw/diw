@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    border: 0;
 }
 
 h1 {
@@ -13,30 +14,31 @@ h1 {
     height: 80vh;
     background-color: lavender;
     margin: 50px auto;
-    padding: 2%;
+    /*padding: 2%;*/
     overflow: hidden;
 }
-
+/*
 .c1, .c2, .c3 {
     margin: 1%;
 }
-
+*/
 .c1 {
     width: 40%;
     height: 60%;
     border: solid 5px red;
     background-color: lightcoral;
-    padding: 50px;
+    margin-right: 5%;
+    margin-left: 2.5%;
     float: left;
-    margin-left: 4%;
 }
 
 .c2 {
     width: 50%;
-    height: 30%;
+    height: 35%;
     border: solid 5px green;
     background-color: palegreen;
-    padding: 50px;
+    /*margin-bottom: 5%;*/
+    margin-right: 2.5%;
     float: left;
 }
 
@@ -45,7 +47,6 @@ h1 {
     height: 20%;
     border: solid 5px blue;
     background-color: lightskyblue;
-    padding: 50px;
-    margin-top: 4%;
+    margin-top: 4vh;
     float: left;
 }
