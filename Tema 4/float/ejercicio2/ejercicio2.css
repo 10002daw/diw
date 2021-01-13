@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+.seccion1 {
+    width: 100%;
+    height: 10%;
+    background-color: orange;
+}
+
+.seccion2 {
+    width: 100%;
+    height: 30%;
+    background-color: blueviolet;
+}
+
+.caja {
+    width: 23%;
+    height: 44%;
+    background-color: yellowgreen;
+    float: left;
+    border: solid 1px black;
+    /*margin: 0.9vh 0 0.9vh 1.6%;*/
+    margin-left: 1.6%;
+    margin-top: 1.2vh;
+}
+
+.seccion3 {
+    width: 100%;
+    height: 60%;
+    background-color: lightslategray;
+}
+
+.seccion3 div {
+    border: solid 1px white;
+}
+
+.bloque1 {
+    width: 32%;
+    height: 75%;
+    background-color: violet;
+    margin: 2vh 1%;
+    float: right;
+}
+
+.bloque2 {
+    width: 65%;
+    height: 30%;
+    background-color: burlywood;
+    margin-top: 2vh;
+    float: right;
+}
+
+.bloque3 {
+    width: 65%;
+    height: 40%;
+    margin-top: 3vh;
+    background-color: brown;
+    float: right;
+}
+
+.bloque4 {
+    width: 80%;
+    height: 15%;
+    background-color: chocolate;
+    margin: auto;
+    clear: both;
+}
