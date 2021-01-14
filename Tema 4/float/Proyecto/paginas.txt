@@ -1,0 +1,21 @@
+https://www.heropatterns.com/
+https://www.svgbackgrounds.com/#wintery-sunburst
+
+body 90%
+background-color: rgba(128,128,128,0.5)
+titular principal ancho 90%
+titular 2 ancho 95%
+
+comic and literature icons
+títulos con espacio entre letras -> letter-spacing: 5px;
+gradiente 10% morado, luego lavenderblush
+
+final
+70% texto 30% imagen
+
+footer
+    h3
+
+tipos de letras:
+    titulares -> coustard
+    texto -> lora
