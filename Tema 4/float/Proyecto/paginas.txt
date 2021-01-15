@@ -19,3 +19,13 @@ footer
 tipos de letras:
     titulares -> coustard
     texto -> lora
+
+
+colores
+    titular -> goldenrod, indigo
+    subtitulo -> mediumpurple, midnightblue
+
+    caja 1 #28004d, darkred
+    caja 2 purple, lavenderblush
+    caja 3 salmon, darkred, #210010
+    footer indigo
