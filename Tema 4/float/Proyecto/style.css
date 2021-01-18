@@ -26,14 +26,13 @@ h1, h2, h3 {
 p {
     font-family: 'Lora', serif;
     text-align: justify;
-    line-height: 1.5em;
     font-weight: 600;
 }
 
 h1 {
     width: 80%;
     text-align: center;
-    font-size: 3vw;
+    font-size: 3.5vw;
     margin: 0 auto;
     padding: 1% 0;
     background-color: goldenrod;
@@ -49,7 +48,8 @@ h2 {
     background-color: midnightblue;
     border: 3px solid mediumpurple;
     border-radius: 5px;
-    padding: 1% 1%;
+    padding: 0.5% 1%;
+    font-size: 3vw;
 }
 
 h3 {
@@ -72,7 +72,7 @@ article {
     background-size: cover;
 }
 
-.section1 article:nth-child(5n) {
+.section1 article:nth-of-type(4n) {
     margin-left: 17.5%;
 }
 
@@ -82,14 +82,20 @@ article {
     margin: 5px;
 }
 
-.section1 article p {
-    font-weight: 600;
+.section1 p {
+    font-size: 0.9em;
+}
+
+.section1 span {
+    color: darkred;
+    font-style: italic;
 }
 
 .section2 article {
     width: 20%;
     float: left;
     border: 2px solid purple;
+    border-radius: 3px;
     background: linear-gradient(purple 10%, lavenderblush 20%);
     padding: 10px;
     margin-left: 2.5%;
@@ -102,6 +108,7 @@ article {
 .section2 article h3 {
     color: lavenderblush;
     text-align: center;
+    padding: 10px 0;
     letter-spacing: 5px;
 }
 
@@ -113,30 +120,51 @@ article {
 
 .section2 article p {
     color: purple;
+    line-height: 1.6em;
 }
 
 .section3 article {
     width: 23.5%;
     float: left;
-    border: 2px solid darkred;
+    border: 3px solid darkred;
+    border-radius: 3px;
     margin-left: 1.2%;
-    padding: 1%;
 }
 
-.section3 h3 {
-    width: 60%;
-    float: left;
+.section3 article > div {
+    border-bottom: 3px solid darkred;
+    padding: 1%;
+    background-color: salmon;
 }
 
 .section3 article h3 {
+    width: 60%;
+    float: left;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 6%;
     font-size: 2.5vw;
 }
 
 .section3 img {
     width: 40%;
     float: left;
+}
+
+.section3 article p {
+    background-color: #210010;
+    color: salmon;
+    padding: 5%;
+    line-height: 2em;
+    font-size: 1.1em;
+} 
+
+footer {
+    padding: 2% 0;
+}
+
+footer h3 {
+    text-align: center;
+    color: indigo;
 }
 
 .clear {
