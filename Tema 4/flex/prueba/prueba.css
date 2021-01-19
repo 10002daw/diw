@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    width: 80%;
+    height: 600px;
+    background-color: skyblue;
+    margin: 40px;
+    padding: 10px;
+
+    display: flex;
+    /*flex-direction: row;
+    flex-wrap: wrap;*/
+    flex-flow: row wrap;
+
+    /*eje principal*/
+    justify-content: space-evenly;
+
+    /*eje cruzado*/
+    align-items: center;
+
+    align-content: space-around; /*se aplica cuando hay más de una línea*/
+}
+
+.flexitem {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    border: 2px solid black;
+    padding: 15px;
+    margin: 5px;
+}

@@ -48,7 +48,7 @@ h2 {
     background-color: midnightblue;
     border: 3px solid mediumpurple;
     border-radius: 5px;
-    padding: 0.5% 1%;
+    padding: 1%;
     font-size: 3vw;
 }
 
@@ -143,6 +143,7 @@ article {
     text-align: center;
     padding-top: 6%;
     font-size: 2.5vw;
+    color: darkred;
 }
 
 .section3 img {
