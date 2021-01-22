@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-family: 'Literata', serif;
+}
+
+body {
+    background-color: LightSlateGray;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px 0;
+    background-color: darkgreen;
+    border: 5px solid whitesmoke;
+    border-radius: 5px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+hr {
+    background-color: whitesmoke;
+    flex-basis: 3px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.cartas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.carta {
+    width: 170px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.5);
+    background-color: whitesmoke;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.indice {
+    color: #222222;
+    font-size: 11pt;
+}
+
+.indice > .numero {
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    margin: 0 2px;
+}
+
+.girar {
+    transform: rotate(180deg);
+}
+
+.treboles {
+    font-size: 2.5em;
+
+    flex-basis: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+}
+
+.fila {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.espaciado {
+    justify-content: space-between;
+}
+
+.centrado {
+    justify-content: center;
+}
