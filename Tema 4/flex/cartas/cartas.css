@@ -18,7 +18,7 @@ body {
 .contenedor {
     width: 90%;
     margin: 10px auto;
-    padding: 10px 0;
+    padding: 13px 0;
     background-color: DarkSlateGray;
     border: 5px solid whitesmoke;
     border-radius: 5px;
@@ -31,13 +31,15 @@ body {
 h1 {
     color: whitesmoke;
     text-align: center;
+    font-size: 3.5em;
+    font-weight: normal;
 }
 
 hr {
     background-color: whitesmoke;
-    flex-basis: 3px;
+    flex-basis: 6px;
     width: 90%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .cartas {
@@ -61,15 +63,23 @@ hr {
 
 .indice {
     color: #222222;
+    font-size: 12pt;
+    margin: 5px 5px;
+}
+
+.carta10 .indice .numero {
     font-size: 11pt;
-    margin: 0 5px;
 }
 
 .indice > .numero {
     font-weight: bold;
 }
 
-p {
+.indice > .palo {
+    margin-top: -5px;
+}
+
+.indice > div {
     text-align: center;
     margin: 0 2px;
 }
@@ -79,16 +89,13 @@ p {
 }
 
 .treboles {
+    padding: 5px;
+
     flex-basis: 100%;
 
     display: flex;
     justify-content: space-between;
     flex-flow: row nowrap;
-}
-
-.fila {
-    display: flex;
-    flex-direction: row;
 }
 
 .columna {
@@ -104,7 +111,7 @@ p {
     justify-content: space-between;
 }
 
-.evenly{
+.evenly {
     justify-content: space-evenly;
 }
 
