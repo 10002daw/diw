@@ -58,6 +58,7 @@ hr {
     background-color: whitesmoke;
 
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
 }
 
@@ -94,20 +95,20 @@ hr {
     flex-basis: 100%;
 
     display: flex;
-    justify-content: space-between;
     flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
 .columna {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
 }
 
 .trebol {
     font-size: 2.5em;
 }
 
-.espaciado {
+.between {
     justify-content: space-between;
 }
 
