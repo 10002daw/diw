@@ -104,15 +104,12 @@ hr {
     flex-flow: column nowrap;
 }
 
-.columna7 {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+.relleno {
+    flex-basis: 100px;
 }
 
-.columna7 .trebol {
-    align-self: stretch;
+.mitad {
+    flex-basis: 50%;
 }
 
 .trebol {
