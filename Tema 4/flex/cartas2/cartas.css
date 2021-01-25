@@ -18,8 +18,8 @@ body {
 .contenedor {
     width: 90%;
     margin: 10px auto;
-    padding: 10px 0;
-    background-color: darkgreen;
+    padding: 13px 0;
+    background-color: DarkSlateGray;
     border: 5px solid whitesmoke;
     border-radius: 5px;
 
@@ -31,13 +31,15 @@ body {
 h1 {
     color: whitesmoke;
     text-align: center;
+    font-size: 3.5em;
+    font-weight: normal;
 }
 
 hr {
     background-color: whitesmoke;
-    flex-basis: 3px;
+    flex-basis: 6px;
     width: 90%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .cartas {
@@ -56,11 +58,17 @@ hr {
     background-color: whitesmoke;
 
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
 }
 
 .indice {
     color: #222222;
+    font-size: 12pt;
+    margin: 5px 5px;
+}
+
+.carta10 .indice .numero {
     font-size: 11pt;
 }
 
@@ -68,7 +76,11 @@ hr {
     font-weight: bold;
 }
 
-p {
+.indice > .palo {
+    margin-top: -5px;
+}
+
+.indice > div {
     text-align: center;
     margin: 0 2px;
 }
@@ -78,24 +90,45 @@ p {
 }
 
 .treboles {
+    padding: 5px;
+
     flex-basis: 100%;
 
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
+}
+
+.columna {
+    display: flex;
     flex-flow: column nowrap;
 }
 
-.fila {
+.columna7 {
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.columna7 .trebol {
+    align-self: stretch;
 }
 
 .trebol {
     font-size: 2.5em;
 }
 
-.espaciado {
+.between {
     justify-content: space-between;
+}
+
+.evenly {
+    justify-content: space-evenly;
+}
+
+.oculto {
+    visibility: hidden;
 }
 
 .centrado {
