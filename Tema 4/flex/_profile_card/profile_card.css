@@ -15,9 +15,15 @@ h1 {
     text-align: center;
 }
 
-.row-cards {
+.cards {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.cards-reverse {
+    display: flex;
+    flex-flow: row-reverse wrap;
 }
 
 .card {
@@ -31,22 +37,41 @@ h1 {
 }
 
 .card img {
-    width: 50%;
+    width: 30%;
     border-radius: 50%;
 }
 
-.pareja {
-    flex: 1 1 75%;
-
-    display: flex;
-    flex-flow: row nowrap;
+.carta-ancha {
+    flex-basis: 35%;
 }
 
-.solo {
-    flex: 1 1 25%;
+.carta-estrecha {
+    flex-basis: 25%;
+    /*min-width: 300px;*/
+}
 
+.prueba {
     display: flex;
     flex-flow: row nowrap;
+    flex: 1 1 75%;
+}
 
+.prueba2 {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 25%;
     min-width: 300px;
+}
+
+.card4 {
+    flex: 20% 1 1;
+    min-width: 300px;
+}
+
+.card5 {
+    flex: 50% 1 1;
+}
+
+.card6 {
+    flex: 50% 1 1;
 }
