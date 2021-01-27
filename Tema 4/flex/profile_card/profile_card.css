@@ -5,10 +5,15 @@
     border: 0;
 }
 
+html {
+    color: ghostwhite;
+}
+
 .container {
     width: 90%;
+    height: 100%;
     margin: auto;
-    background-color: thistle;
+    background-color: #050505;
 }
 
 h1 {
@@ -24,15 +29,75 @@ h1 {
     background-color: turquoise;
     display: flex;
     flex-flow: column nowrap;
+    /*justify-content: space-between;*/
     align-items: center;
-    padding: 10px;
     margin: 5px;
     flex-grow: 1;
 }
 
-.card img {
-    width: 50%;
+.card  img {
+    width: 40%;
     border-radius: 50%;
+    margin: 20px;
+}
+
+.card > h2 {
+    margin: 5px;
+}
+
+.card > hr {
+    width: 0;
+    height: 3px;
+    background-color: white;
+    align-self: flex-start;
+    margin-left: 5%;
+    opacity: 0%;
+
+    transition: all 3s;
+}
+
+.card:hover > hr {
+    width: 90%;
+    opacity: 100%;
+}
+
+.card > h3 {
+    margin: 5px;
+}
+
+.card > p {
+    text-align: justify;
+    width: 90%;
+}
+
+.card > .sn {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    background-color: gainsboro;
+    opacity: 80%;
+
+    transition: all 2s;
+}
+
+.card:hover > .sn {
+    transform: scaleY(1);
+    transform-origin: bottom;
+}
+
+.card > .sn > i {
+    font-size: 3em;
+    color: darkgray;
+    padding: 10px 5px;
+}
+
+.card > .sn > i:hover {
+    color: gainsboro;
+    background-color: darkgray;
 }
 
 .pareja {
