@@ -1,0 +1,18 @@
+position: absolute; (se posiciona en función del viewport, si el padre no tiene ningún posicionamiento)
+position: relative; (se posicione respecto a su contenedor)
+
+top
+botton
+left
+right
+
+z-index
+
+transiciones
+    borde de la caja
+    borde de la foto
+    interior de la foto
+    línea bajo el nombre
+    aparición de redes
+    cambio de color de redes
+    decoración detrás de la foto
