@@ -15,19 +15,19 @@ html {
 }
 
 .card-a {
-    background-color: #30ad92;
+    background-color: #30ad92aa;
 }
 
 .card-b {
-    background-color: #6C42AD;
+    background-color: #6C42ADaa;
 }
 
 .card-c {
-    background-color: #AD441F;
+    background-color: #AD441Faa;
 }
 
 .card-d {
-    background-color: #ADA828;
+    background-color: #ADA828aa;
 }
 
 html {
@@ -37,8 +37,7 @@ html {
 .container {
     width: 90%;
     margin: auto;
-    background-color: black;
-    opacity: 92%;
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
 }
@@ -52,30 +51,53 @@ h1 {
 .row {
     display: flex;
     flex-flow: row wrap;
+    align-items: stretch;
 }
 
 .card {
+    position: relative;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-    margin: 6px;
+    margin: 10px;
     flex: 1 1 100%;
 
     border: solid 3px rgba(0, 0, 0, 0);
-    border-radius: 3px;
-    transition: border 1s;
+    border-radius: 0;
+    transition: all 1s;
 }
 
 .card:hover {
     border: solid 3px gainsboro;
+    border-radius: 3px;
+}
+
+.decoracion {
+    width: 100%;
+    height: 0;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+    top: 0;
+    background-color: gray;
+    background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
+    background-size: 50px 50px;
+    z-index: -1;
+
+    transition: all 3s;
+}
+
+.card:hover .decoracion {
+    height: 30%;
 }
 
 .card img {
     width: 40%;
     border-radius: 50%;
     margin: 20px;
-    border: solid 1px black;
+    /*border: solid 1px black;*/
+    box-shadow: 0 0 0 1px black;
     filter: brightness(130%);
     transform: scale(1);
     
@@ -89,7 +111,8 @@ h1 {
 }
 
 .card-a:hover img {
-    border: solid 4px #165043;
+    /*border: solid 4px #165043;*/
+    box-shadow: 0 0 0 4px #165043;
 }
 
 .card-b:hover img {
@@ -117,7 +140,7 @@ h3 {
     font-size: 1.4em;
 }
 
-.card > hr {
+.card hr {
     width: 0;
     height: 3px;
     background-color: white;
@@ -125,15 +148,15 @@ h3 {
     margin-left: 5%;
     opacity: 0%;
 
-    transition: all 3s;
+    transition: opacity 1s, width 3s;
 }
 
-.card:hover > hr {
+.card:hover hr {
     width: 90%;
     opacity: 100%;
 }
 
-.card > p {
+.card p {
     text-align: justify;
     font-size: 1.2em;
     width: 80%;
@@ -143,7 +166,7 @@ h3 {
 .card .sn {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-self: center;
     width: 100%;
     padding: 0 2%;
@@ -151,7 +174,7 @@ h3 {
     transform-origin: bottom;
     background-color: gainsboro;
 
-    transition: all 2s;
+    transition: all 1s;
 }
 
 .card:hover .sn {
@@ -160,7 +183,7 @@ h3 {
 }
 
 .card .sn a i {
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 .card .sn a {
@@ -208,6 +231,7 @@ h3 {
 
     display: flex;
     flex-flow: row nowrap;
+    align-items: stretch;
 }
 
 .solo {
@@ -215,6 +239,7 @@ h3 {
 
     display: flex;
     flex-flow: row nowrap;
+    align-items: stretch;
 
     min-width: 300px;
 }
