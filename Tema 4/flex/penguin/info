@@ -1,0 +1,15 @@
+barra fixed
+hover iconos se iluminan
+
+header
+hover colores se invierten y texto se ensancha
+
+nav
+
+columna zigzag
+columna normal
+columna dividida en 2 con transición hover scale, cambio en la imagen y en el fondo
+
+footer
+
+scroll-behavior: smooth;
