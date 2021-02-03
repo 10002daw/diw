@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.contenedor {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid purple;
+    grid-template-columns: 100px 100px auto;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-gap: 10px;
+}
