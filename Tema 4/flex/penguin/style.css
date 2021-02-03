@@ -63,7 +63,7 @@ main p {
 }
 
 .trivia {
-    flex-basis: 20%;
+    flex-basis: 25%;
 
     display: flex;
     flex-flow: column nowrap;
@@ -77,23 +77,35 @@ main p {
     padding: 5px;
 }
 
-.left {
+.trivia article.left {
     align-self: flex-start;
+    background-color: navajowhite;
 }
 
-.right {
+.trivia article.right {
     align-self: flex-end;
+    background-color: peru;
+}
+
+.trivia article h3 {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.trivia article.left h3 {
+    background-color: peru;
+}
+
+.trivia article.right h3 {
+    background-color: navajowhite;
 }
 
 .contributors {
-    flex-basis: 45%;
+    flex-basis: 40%;
 
     display: flex;
     flex-flow: column nowrap;
-}
-
-.contibutors article:target {
-    background-color: gold;
 }
 
 .contributors article {
@@ -101,6 +113,13 @@ main p {
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
+}
+
+div.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
 }
 
 .contributors article img {
@@ -126,15 +145,33 @@ main p {
 }
 
 .places article {
-    flex: 1 1 40%;
+    flex: 1 1 45%;
 
-    /*display: flex;
-    flex-flow: column nowrap;*/
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
 
     margin: 5px;
     background-color: palegoldenrod;
+    min-width: 200px;
 }
 
 .places article img {
     width: 100%;
+}
+
+.places article h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.places article p {
+    padding: 5px;
+}
+
+.places article a {
+    background-color: goldenrod;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
 }
