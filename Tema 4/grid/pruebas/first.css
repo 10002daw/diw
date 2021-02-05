@@ -10,11 +10,34 @@
     width: 80%;
     margin: 0 auto;
     border: 5px solid purple;
-    grid-template-columns: 50% 1fr 2fr auto;
-    grid-template-rows: repeat(3, 1fr);
+    /*
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: [linea1] 1fr [linea2] 1fr [linea3] 1fr [linea4];
 
-    grid-gap: 5px 1%;
+    grid-template-areas: 
+        "a1 a1 .. .."
+        ".. a2 a2 a3"
+        ".. .. .. a3";
+    */
+    grid-template: 
+    "a1 a1 .. .." 1fr 
+    ".. a2 a2 a3" 1fr 
+    ".. .. .. a3" 1fr / 1fr 1fr 1fr 1fr;
+
+    grid-gap: 20px;
     /*row-gap: 5px;
     column-gap: 10px;*/
 
+}
+/*
+.c1 {
+    grid-area: a1;
+}
+
+.c5 {
+    grid-area: a2;
+}
+
+.c6 {
+    grid-area: a3;
 }

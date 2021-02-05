@@ -13,3 +13,5 @@ columna dividida en 2 con transición hover scale, cambio en la imagen y en el f
 footer
 
 scroll-behavior: smooth;
+
+tamaño letra derecha<izq<centro

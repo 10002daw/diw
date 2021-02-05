@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.contenedor {
+    display: grid;
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    /*
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr;
+
+    grid-template-areas: 
+        "a1 a1 .."
+        "a2 a3 a3"
+        "a2 .. ..";
+    */
+}
+
+.contenedor div {
+    border: 1px solid black;
+    background-color: palegoldenrod;
+    text-align: center;
+    padding: 10px;
+}
+
+.c1 {
+    grid-area: a1;
+}
+
+.c2 {
+    grid-area: a2;
+}
+
+.c3 {
+    grid-area: a3;
+}
