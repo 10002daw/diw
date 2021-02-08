@@ -11,6 +11,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: #e8fdfa;
 }
 
 a {
@@ -29,22 +30,27 @@ h4 {
     position: fixed;
     z-index: 10;
     width: 100%;
-    height: 40px;
+    height: 45px;
     top: 0;
     color: white;
-    background-color: lightcoral;
+    background-color: #F08080;
 }
 
 .fixed p {
     text-align: center;
+    font-weight: bold;
 }
 
 .fixed a i {
-    transition: all 1s linear;
+    transition: all 0.5s linear;
 }
 
 .fixed a:hover i {
-    text-shadow: 2px 2px 2px greenyellow;
+    text-shadow: 
+        1px 1px 1px #67F0DB,
+        1px -1px 1px #67F0DB,
+        -1px 1px 1px #67F0DB,
+        -1px -1px 1px #67F0DB;
 }
 
 header {
@@ -52,7 +58,7 @@ header {
     flex-flow: row nowrap;
     align-items: center;
 
-    padding: 50px 10px 10px 10px;
+    padding: 55px 10px 10px 10px;
 }
 
 header img {
@@ -78,21 +84,22 @@ nav a {
 
     margin: 1px;
     padding: 5px 0;
-    background-color: paleturquoise;
+    background-color: #67F0DB;
+    color: #07463c;
     
     transition: all 1s;
 }
 
 nav a:hover {
-    background-color: honeydew;
+    background-color: #07463c;
+    color: #67F0DB;
+    font-weight: bold;
     letter-spacing: .1em;
 }
 
 main {
     display: flex;
     flex-flow: row nowrap;
-
-    background-color: gray;
 }
 
 main p {
@@ -110,6 +117,10 @@ article {
     flex-flow: column nowrap;
 }
 
+.trivia h2 {
+    padding-left: 10px;
+}
+
 .trivia article {
     width: 80%;
     border: solid 1px black;
@@ -120,12 +131,14 @@ article {
 
 .trivia article.left {
     align-self: flex-start;
-    background-color: navajowhite;
+    background-color: #a211a2;
+    color: #fad1fa;
 }
 
 .trivia article.right {
     align-self: flex-end;
-    background-color: peru;
+    background-color: #fad1fa;
+    color: #a211a2;
 }
 
 .trivia article h3 {
@@ -135,11 +148,13 @@ article {
 }
 
 .trivia article.left h3 {
-    background-color: peru;
+    background-color: #fad1fa;
+    color: #a211a2;
 }
 
 .trivia article.right h3 {
-    background-color: navajowhite;
+    background-color: #a211a2;
+    color: #fad1fa;
 }
 
 .contributors {
@@ -149,17 +164,22 @@ article {
     flex-flow: column nowrap;
 }
 
+.contributors h2 {
+    padding-left: 10px;
+}
+
 .contributors article {
     border: solid 1px black;
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
+    background-color: #f6ccbc;
 }
 
 .anchor {
     display: block;
     position: relative;
-    top: -50px;
+    top: -55px;
     visibility: hidden;
 }
 
@@ -170,12 +190,13 @@ article {
 }
 
 .contributors p {
-    line-height: 1.5em;
+    line-height: 1.8em;
+    font-size: 1.1em;
 }
 
 .contributors span {
     font-weight: bold;
-    color: orange;
+    color: #b54417;
 }
 
 .places {
@@ -188,6 +209,7 @@ article {
 
 .places h2 {
     flex-basis: 100%;
+    padding-left: 10px;
 }
 
 .places article {
@@ -199,7 +221,8 @@ article {
 
     border: solid 1px black;
     margin: 5px;
-    background-color: palegoldenrod;
+    background-color: #e0f9d2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2328590d' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     min-width: 200px;
 
     transition: all 1s;
@@ -207,12 +230,13 @@ article {
 
 .places article:hover {
     transform: scale(1.02);
+    box-shadow: 6px 6px 6px black;
 }
 
 .places article img {
     width: 100%;
     filter: saturate(0.5);
-    filter: contrast(0.5);
+    filter: contrast(0.8);
     transition: all 1s;
 }
 
@@ -227,19 +251,21 @@ article {
 }
 
 .places article p {
-    padding: 5px;
+    padding: 6px;
+    line-height: 1.4em;
 }
 
 .places article a {
-    background-color: goldenrod;
+    background-color: #28590d;
     text-align: center;
     margin: 5px;
     padding: 5px;
+    color: white;
     transition: all 1s;
 }
 
 .places article a:hover {
-    background-color: powderblue;
+    background-color: #910091;
 
 }
 
@@ -248,5 +274,6 @@ footer {
     font-weight: bold;
     color: wheat;
     text-align: center;
+    margin-top: 10px;
     padding: 20px 0;
 }
