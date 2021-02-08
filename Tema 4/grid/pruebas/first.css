@@ -8,26 +8,48 @@
 .contenedor {
     display: grid;
     width: 80%;
+
     margin: 0 auto;
     border: 5px solid purple;
-    /*
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: [linea1] 1fr [linea2] 1fr [linea3] 1fr [linea4];
+    
+    /*grid-template-rows: repeat(3,150px);
+    grid-template-columns: repeat(4, 150px);*/
 
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+/*
     grid-template-areas: 
         "a1 a1 .. .."
         ".. a2 a2 a3"
         ".. .. .. a3";
-    */
+*/
+/*    
     grid-template: 
     "a1 a1 .. .." 1fr 
     ".. a2 a2 a3" 1fr 
-    ".. .. .. a3" 1fr / 1fr 1fr 1fr 1fr;
-
-    grid-gap: 20px;
+    ".. .. .. a3" 1fr 
+    / 1fr 1fr 1fr 1fr;
+*/
+    grid-gap: 2px;
     /*row-gap: 5px;
     column-gap: 10px;*/
+/*
+    justify-items: center;
+    align-items: start;
+*/
+    place-items: center stretch;
+/*
+    justify-content: start;
+    align-content: end;*/
+ /*   place-content: end;*/
+    
 
+    background-color: orange;
+}
+
+.contenedor div {
+    /*width: 100px;
+    height: 100px;*/
+    background-color: white;
 }
 /*
 .c1 {
@@ -40,4 +62,4 @@
 
 .c6 {
     grid-area: a3;
-}
+}*/
