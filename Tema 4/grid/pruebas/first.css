@@ -15,7 +15,17 @@
     /*grid-template-rows: repeat(3,150px);
     grid-template-columns: repeat(4, 150px);*/
 
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    /*grid: repeat(3,150px) / repeat(4, 150px);*/
+
+    grid: 
+        'a1     a1      .       .'      150px
+        '.      a2      a2      a3'     150px 
+        '.      .       .       a3'     150px / 
+         150px  150px   150px   150px;
+
+    /*grid-template-columns: repeat(auto-fit,minmax(300px,1fr));*/
+    /*grid-auto-rows: 300px;*/
+    grid-auto-flow: column;
 /*
     grid-template-areas: 
         "a1 a1 .. .."
@@ -36,30 +46,44 @@
     justify-items: center;
     align-items: start;
 */
-    place-items: center stretch;
+    place-items: center;
 /*
     justify-content: start;
     align-content: end;*/
- /*   place-content: end;*/
+    place-content: end center;
     
-
     background-color: orange;
 }
 
 .contenedor div {
-    /*width: 100px;
-    height: 100px;*/
+    /*width: 80%;
+    height: 80%;*/
     background-color: white;
 }
-/*
+
 .c1 {
-    grid-area: a1;
+    /*grid-column-start: 4;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grd-row-end: 4;*/
+    grid-area: 2/3/3/5;
+    align-self: end;
+    justify-self: stretch;
 }
 
-.c5 {
-    grid-area: a2;
+div.c2 {
+    /*grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: aqua;*/
+    place-self: stretch stretch;
 }
-
-.c6 {
-    grid-area: a3;
+/*
+div.c6 {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: lightcyan;
 }*/

@@ -1,0 +1,16 @@
+contenedor flex flex-flow: column nowrap
+    Mes
+    Días de la semana 1x7
+    Día del mes grid 6x7
+
+font-family: "Poppins";
+Rosa: #FFB3FF
+Variaciones: #330033 (oscuro) #B300B3 (saturado, se usa en el borde y en el título)
+
+Verde: #58F584
+
+Amarillo: #F5F371
+
+Rojo: #033010 MAL
+
+60-80% ancho
