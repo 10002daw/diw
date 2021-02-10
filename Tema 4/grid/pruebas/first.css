@@ -70,14 +70,14 @@
     align-self: end;
     justify-self: stretch;
 }
-
+/*
 div.c2 {
     /*grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
     background-color: aqua;*/
-    place-self: stretch stretch;
+ /*   place-self: stretch stretch;
 }
 /*
 div.c6 {
