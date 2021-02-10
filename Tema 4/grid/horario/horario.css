@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nova+Square&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+html {
+    font-family: 'Nova Square', cursive;
+    font-size: 2.6vw;
+    color: mintcream;
+    background-image: url("fondo.png");
 }
 
 .horario {
@@ -12,45 +21,54 @@
     grid-template-rows:  1.5fr repeat(7, 1fr);
     grid-template-columns: 2fr repeat(5, 1fr);
     grid-auto-flow: column;
-    gap: 5px;
+    gap: 3px;
 }
 
 .horario > div {
     text-align: center;
+    background-color: #323C42;
+    display: flex;
+    padding: .5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.modulo {
+    font-family: 'Lato', sans-serif;
 }
 
 .horario > div:first-child {
     grid-row-start: 2;
 }
 
-.horizontal {
+.h2 {
     grid-column-end: span 2;
 }
 
-.vertical {
+.v2 {
     grid-row-end: span 2;
 }
 
-.linea {
+.h6 {
     grid-column-end: span 6;
 }
 
-.daw {
+div.daw {
     background-color: #878523;
 }
 
-.diw {
+div.diw {
     background-color: #7A1A53;
 }
 
-.dwec {
+div.dwec {
     background-color: #16876B;
 }
 
-.dwes {
+div.dwes {
     background-color: #704012;
 }
 
-.eiem {
+div.eiem {
     background-color: #171B91;
 }
