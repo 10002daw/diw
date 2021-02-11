@@ -9,14 +9,14 @@
 
 html {
     font-family: 'Nova Square', cursive;
-    font-size: 2.6vw;
+    font-size: min(2.6vw, 2em);
     color: mintcream;
     background-image: url("fondo.png");
 }
 
 .horario {
     width: 90%;
-    margin: 0 auto;
+    margin: 3% auto;
     display: grid;
     grid-template-rows:  1.5fr repeat(7, 1fr);
     grid-template-columns: 2fr repeat(5, 1fr);
@@ -25,10 +25,9 @@ html {
 }
 
 .horario > div {
-    text-align: center;
     background-color: #323C42;
-    display: flex;
     padding: .5%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
