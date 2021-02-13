@@ -5,6 +5,21 @@
     border: 0;
 }
 
+header {
+    background-image: url("images/header.jpg");
+    background-size: cover;
+    color: white;
+}
+
+html {
+    background-image: url("images/fondo.png");
+}
+
+header h1,
+header p {
+    text-align: center;
+}
+
 main {
     width: 90%;
     margin: 0 auto;
@@ -12,19 +27,28 @@ main {
     grid-template-rows: repeat(auto-fit, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-rows: minmax(200px,25vh);
-    gap: 1%;
+    gap: 1vw;
 }
 
 .foto {
     position: relative;
     border-radius: 10px;
+    transition: all 1s;
+    overflow: hidden;
 }
 
 .foto img {
-    /*border-radius: 10px;*/
+    border-radius: 10px;
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+
+.foto h2 {
+    font-size: 1em;
+    width: 100%;
+    background-color: #fff0f566;
+    padding: 3px 0 3px 3px;
 }
 
 .destino {
@@ -32,11 +56,27 @@ main {
     top: 0;
     left: 0;
     z-index: 10;
+    transition: all 1s;
 }
 
 .pais {
     position: absolute;
     z-index: 10;
-    top: calc(100% - 20px);
+    /* top: calc(100% - 26px); */
+    bottom: 0;
     left: 0;
+    transition: all 1s;
+}
+
+.foto:hover {
+    transform: scale(1.03);
+    z-index: 100;
+}
+
+.foto:hover .destino {
+    top: -26px;
+}
+
+.foto:hover .pais {
+    bottom: -26px;
 }
