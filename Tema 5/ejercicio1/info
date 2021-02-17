@@ -1,0 +1,24 @@
+Ejercicio 
+@media screen and (max-width:500px) {
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+desktop first -> max-width
+mobile first -> min-width
+
+otras condiciones -> orientation, aspect-ratio
+
+.couple{diplay:flex; flex-flow:column nowrap;}
+p{text-align:center}
+reem kufi
+
+<=500px
+    todo en una columna
+    texto centrado
+    redes sociales fijas
+    línea fija
+    las tarjetas no ocupan todo el ancho de su contenedor
+501px-900px
+    todo el ancho de su contenedor
