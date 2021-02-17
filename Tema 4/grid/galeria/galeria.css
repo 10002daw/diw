@@ -82,9 +82,9 @@ main {
 }
 
 .foto:hover .destino {
-    top: -48px;
+    transform: translateY(-100%);
 }
 
 .foto:hover .pais {
-    bottom: -48px;
+    transform: translateY(100%);
 }
