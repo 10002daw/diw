@@ -46,7 +46,7 @@ html {
 h1 {
     text-align: center;
     font-size: 2.2em;
-    padding-top: 15px;
+    padding: 2% 0;
     font-weight: bold;
 }
 
@@ -132,6 +132,7 @@ h2,
 h3 {
     margin: 10px 0;
     font-weight: 400;
+    text-align: center;
 }
 
 h2 {
@@ -250,8 +251,12 @@ h3 {
 }
 
 @media screen and (max-width:900px) {
-    body {
-        font-size: 88%;
+    html {
+        font-size: 80%;
+    }
+
+    h1 {
+        font-size: 2.4em;
     }
 
     .pareja {
@@ -285,12 +290,21 @@ h3 {
 }
 
 @media screen and (max-width:500px) {
-    body {
-        font-size: 80%;
+    html {
+        font-size: 70%;
     }
 
     h1 {
-        font-size: 1.6em;
+        font-size: 6vw;
+    }
+
+    .row {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .solo {
+        min-width: 0;
     }
 
     .pareja {
@@ -312,6 +326,10 @@ h3 {
         border: solid 3px rgba(0, 0, 0, 0);
         border-radius: 0;
     }
+
+    .card .sn a i {
+        font-size: 2.5em;
+    }    
 
     .card-a .sn a:hover {
         color: #165043;

@@ -8,7 +8,7 @@
 }
 
 header {
-    /* background-image: url("images/header.jpg"); */
+    background-image: url("images/header.jpg");
     background-size: cover;
     color: white;
 }
@@ -19,7 +19,8 @@ h1 {
 
 html {
     font-family: 'Open Sans', sans-serif;
-    /* background-image: url("images/fondo.png"); */
+    background-image: url("images/fondo.png");
+    opacity: 0.8;
 }
 
 header h1,
