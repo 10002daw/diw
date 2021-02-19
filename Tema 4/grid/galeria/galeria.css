@@ -15,6 +15,7 @@ header {
 
 h1 {
     font-family: 'Lobster', cursive;
+    font-size: 3vw;
 }
 
 html {
@@ -88,4 +89,10 @@ main {
 
 .foto:hover .pais {
     transform: translateY(100%);
+}
+
+footer {
+    color: whitesmoke;
+    text-align: center;
+    margin: 10px auto;
 }

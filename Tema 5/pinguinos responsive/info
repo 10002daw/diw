@@ -1,0 +1,9 @@
+breakpoint 1
+    columna izquierda sin zigzag
+    columna derecha
+
+breakpoint 2
+    todo en una columna
+    menú vertical 
+    sin hovers
+    primero contibutors

@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #e8fdfa;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 45px;
+    top: 0;
+    color: white;
+    background-color: #F08080;
+}
+
+.fixed p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.fixed a i {
+    transition: all 0.5s linear;
+}
+
+.fixed a:hover i {
+    text-shadow: 
+        1px 1px 1px #67F0DB,
+        1px -1px 1px #67F0DB,
+        -1px 1px 1px #67F0DB,
+        -1px -1px 1px #67F0DB;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    padding: 55px 10px 10px 10px;
+}
+
+header img {
+    width: 10%;
+    flex-basis: 10%;
+}
+
+header h1 {
+    flex-basis: 90%;
+
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+nav a {
+    flex: 1 1 0;
+
+    text-align: center;
+
+    margin: 1px;
+    padding: 5px 0;
+    background-color: #67F0DB;
+    color: #07463c;
+    
+    transition: all 1s;
+}
+
+nav a:hover {
+    background-color: #07463c;
+    color: #67F0DB;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+main p {
+    text-align: justify;
+}
+
+article {
+    box-shadow: 3px 3px 5px black;
+}
+
+.trivia {
+    flex-basis: 25%;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.trivia h2 {
+    padding-left: 10px;
+}
+
+.trivia article {
+    width: 80%;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.trivia article.left {
+    align-self: flex-start;
+    background-color: #a211a2;
+    color: #fad1fa;
+}
+
+.trivia article.right {
+    align-self: flex-end;
+    background-color: #fad1fa;
+    color: #a211a2;
+}
+
+.trivia article h3 {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.trivia article.left h3 {
+    background-color: #fad1fa;
+    color: #a211a2;
+}
+
+.trivia article.right h3 {
+    background-color: #a211a2;
+    color: #fad1fa;
+}
+
+.contributors {
+    flex-basis: 40%;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.contributors h2 {
+    padding-left: 10px;
+}
+
+.contributors article {
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #f6ccbc;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -55px;
+    visibility: hidden;
+}
+
+.contributors article img {
+    width: 15%;
+    min-width: 100px;
+    float: left;
+}
+
+.contributors p {
+    line-height: 1.8em;
+    font-size: 1.1em;
+}
+
+.contributors span {
+    font-weight: bold;
+    color: #b54417;
+}
+
+.places {
+    flex-basis: 35%;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+.places h2 {
+    flex-basis: 100%;
+    padding-left: 10px;
+}
+
+.places article {
+    flex: 1 1 45%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+
+    border: solid 1px black;
+    margin: 5px;
+    background-color: #e0f9d2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2328590d' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    min-width: 200px;
+
+    transition: all 1s;
+}
+
+.places article:hover {
+    transform: scale(1.02);
+    box-shadow: 6px 6px 6px black;
+}
+
+.places article img {
+    width: 100%;
+    filter: saturate(0.5);
+    filter: contrast(0.8);
+    transition: all 1s;
+}
+
+.places article:hover img {
+    filter: saturate(1);
+    filter: contrast(1);
+}
+
+.places article h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.places article p {
+    padding: 6px;
+    line-height: 1.4em;
+}
+
+.places article a {
+    background-color: #28590d;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    transition: all 1s;
+}
+
+.places article a:hover {
+    background-color: #910091;
+
+}
+
+footer {
+    background-color: blue;
+    font-weight: bold;
+    color: wheat;
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px 0;
+}
