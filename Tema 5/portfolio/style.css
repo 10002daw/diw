@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+
+font-family: 'Raleway', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+header > h1 {
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+nav {
+    border: 1px solid black;
+
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom: .5em;
+}
+
+main {
+    width: 100%;
+    padding: 0.5rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 100%;
+    margin-bottom: .5em;
+}
+
+main > article {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: lavenderblush;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+/* main > article > * {
+    width: 100%;
+} */
+
+main > article > h2 {
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+main > article > h3 {
+    background-color: khaki;
+    padding: .5em .2em;
+    margin-bottom: 1em;
+}
+
+main > article > p {
+    text-align: justify;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+main > article > a {
+    align-self: flex-start;
+}
+
+main > article > img {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    border: 2px solid black;
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width:600px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:1000px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
